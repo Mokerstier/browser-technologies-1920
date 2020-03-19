@@ -1,3 +1,4 @@
+const getter = require('../getter/getbody')
 
 function renderHome(req, res) {
     res.render('pages/home.ejs', {
@@ -6,20 +7,23 @@ function renderHome(req, res) {
 }
 
 function renderFormOpen(req, res) {
-    let user = !req.query ? req.query.fname : null
+    console.log(res.locals.user)
+    const user = res.locals.user
     if (!user){
         res.render('pages/formintro.ejs', {
-        title: 'Hallo gebruiker'        
+        title: `Hallo gebruiker`        
         })
     } else res.render('pages/formintro.ejs', {
-        title: `Hallo ${user}`      
+        title: `Hallo ${user.fname}`      
     })
 }
 
 function renderFormStart(req, res) {
+    console.log('hallo')
+
     res.render('pages/formstart.ejs', {
         title: 'Hallo gebruiker',
-        user: req.query.fname        
+               
         })
 }
 

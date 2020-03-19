@@ -1,7 +1,9 @@
 function routes(){
 
     const render = require('../controllers/render/render')
-    const getter = require('../controllers/getter/getBody.js')
+    const setter = require('../controllers/setter/setbody')
+    const getter = require('../controllers/getter/getbody')
+
     const express = require('express')
     const router = express.Router()
 
@@ -11,8 +13,11 @@ function routes(){
     router
         .get('/', render.renderHome)
         .get('/enquete', getter.getBody, render.renderFormOpen)
-        .get('/formstart', getter.getBody, render.renderFormStart)
+        .get('/formstart', render.renderFormStart)
     
+        .post('/enquete', urlencodedParser, setter.setBody, render.renderFormStart)
+        
+        
         return router
 }
 

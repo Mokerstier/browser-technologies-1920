@@ -1,18 +1,19 @@
 <%- include('../partials/head.ejs') %>
 <main>
-    <form action="/formstart" method="GET">
+    <form action="/enquete" method="POST">
         <fieldset>
 
             <legend>Persoonlijke gegevens</legend>
-            <label for="fname">Voornaam:</label>
-            <input type="text" name="fname" id="fname">
-            <br>
-            <label for="lname">Achternaam:</label>
+            <label for="fname">Voornaam:
+            <input type="text" name="fname" id="fname" value="">
+            </label>
+            <label for="lname">Achternaam:
             <input type="text" name="lname" id="lname">
-            <br>
-            <label for="anon">Ik blijf liever anoniem</label>
+            </label>
+            <label for="anon">Ik blijf liever anoniem
             <input type="checkbox" name="anon" id="anon">
-            
+            </label>
+
         </fieldset>
         <button type="submit" value="">Verder</button>
     </form>
