@@ -1,0 +1,57 @@
+<%- include('../partials/head.ejs') %>
+<main>
+    <form action="/q2" method="POST">
+        <progress value="9" max="9"></progress>
+        <p>Controleer je antwoorden</p>
+        <fieldset>
+            <legend>Vraag 1</legend>
+            <p>Wie was je favoriete docent voor de minor?</p>
+            <small>Meerdere antwoorden mogelijk</small>
+            <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
+            <input type="hidden" name="state" value="2">
+            <label for="Joost">Joost
+                <%= user.favdoc[0] == 'JOO5T' ? <input type="checkbox" name="favdoc" id="Joost" value="JOO5T"checked> : <input type="checkbox" name="favdoc" id="Joost" value="JOO5T"> %>
+            </label>
+            <label for="koop">Koop
+                <input type="checkbox" name="favdoc" id="koop" value="BUY">
+            </label>
+            <label for="Vasilis">Vasilis
+                <input type="checkbox" name="favdoc" id="Vasilis" value="VaCss">
+            </label>
+            <input type="radio" name="favdoc" id="anders">
+            <label for="anders">Anders namelijk
+                <input type="text" name="favdoc" id="anders">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vraag 2</legend>
+            <p>Wat was je favoriete vak?</p>
+            <small>Meerdere antwoorden mogelijk</small>
+            <input type="hidden" id="uuid" name="uuid" value="12">
+            <input type="hidden" name="state" value="2">
+            <label for="Joost">CSS-to-the-recue
+                <input type="checkbox" name="favcourse" id="CSS" value="CSS">
+            </label>
+            <label for="WAFS">WAFS
+                <input type="checkbox" name="favcourse" id="WAFS" value="WAFS">
+            </label>
+            <label for="Vasilis">PWA
+                <input type="checkbox" name="favcourse" id="PWA">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vraag 3</legend>
+            <p>Wat had in deze minor had je liever anders gezien?</p>
+            <label for="feedback">Antwoord:</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback %></textarea>
+        </fieldset>
+
+        <button type="submit" value="">Verder</button>
+    </form>
+
+</main>
+
+
+<%- include('../partials/footer.ejs') %>

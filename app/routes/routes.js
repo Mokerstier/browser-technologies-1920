@@ -12,12 +12,13 @@ function routes(){
     
     router
         .get('/', render.renderHome)
-        .get('/enquete', getter.getBody, render.renderFormOpen)
-        .get('/formstart', render.renderFormStart)
+        .get('/enquete', render.renderFormOpen)
+        .get('/q1', render.renderFormStart)
     
-        .post('/enquete', urlencodedParser, setter.setBody, render.renderFormStart)
-        
-        
+        .post('/q1', urlencodedParser, getter.getBody, render.renderFormStart)
+        .post('/q2', urlencodedParser, getter.getBody, render.renderFormMid)
+        .post('/q3', urlencodedParser, getter.getBody, render.renderFormEnd)
+        .post('/outro', urlencodedParser, getter.getBody, render.renderFormCheck)
         return router
 }
 
