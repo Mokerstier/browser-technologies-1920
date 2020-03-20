@@ -1,5 +1,3 @@
-const getter = require('../getter/getbody')
-
 function renderHome(req, res) {
     res.render('pages/home.ejs', {
         title: 'Home'
