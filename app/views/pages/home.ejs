@@ -3,7 +3,18 @@
     <h1>Welkom bij de progressive enquete!</h1>
     <p>In deze enquete zullen dingen gevraagd worden die betrekking hebben op:</p>
     <p>de MINOR WEB DEVELOPMENT</p>
-    <p>Om door te gaan naar de enquete klik <a href="/enquete">hier</a></p>
+    <form action="/vraag" method="post">
+    <fieldset>
+        <legend>Authenticatie</legend>
+        <p>Voer je studentnummer in om door te gaan</p>
+        <small>Maak je geen zorgen als je wilt kun je ervoor kiezen om anoniem te blijven in de volgende stap.</small>
+        <label for="uuid">Studentnummer
+            <input type="number" name="uuid" id="uuid">
+        </label>
+    </fieldset>
+    <button type="submit">Volgende</button>
+    </form>
+
 </main>
 
 

@@ -10,10 +10,9 @@
             </label>
             <label for="lname">Achternaam:
             <input type="text" name="lname" id="lname">
-            </label>
-            <label for="uuid">Studentnummer:
-                <input type="text" name="uuid" id="uuid">
-            </label>
+            
+            <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
+
             <label for="anon">Ik blijf liever anoniem
             <input type="checkbox" name="anon" id="anon">
             </label>

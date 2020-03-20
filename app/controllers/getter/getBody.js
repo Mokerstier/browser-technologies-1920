@@ -1,6 +1,29 @@
 const fs = require('fs-extra')
 const jsonFile = './controllers/data/data.json'
 
+function checkUser(req, res, next){
+    console.log(req.body.uuid)
+    res.locals = req.body
+    let userState
+    fs.readFile(jsonFile, (err, content) => {
+        if (err) return console.log(err)
+        const uuId = req.body.uuid
+        const contentJSON = JSON.parse(content)
+        for (i = 0; i < contentJSON.data.length; i++) {
+            if (contentJSON.data[i].uuid === uuId) {
+                console.log('found match '+contentJSON.data[i])
+                userState = contentJSON.data[i].state
+                const user = contentJSON.data[i]
+                res.render(`pages/q${userState}`, {
+                    title: `Welkom terug${userState}`,
+                    user: user
+                })
+            }
+        }
+    })
+
+}
+
 const getBody = (req, res, next) => {
     const { fname, lname, uuid, favdoc, anon, state, favcourse, feedback} = req.body
     const formData = { fname, lname, uuid, favdoc, anon, state, favcourse, feedback }
@@ -64,4 +87,4 @@ const getBody = (req, res, next) => {
 }
 
 
-module.exports = { getBody }
+module.exports = { getBody, checkUser }
