@@ -51,7 +51,7 @@ function renderFormCheck(req, res) {
     const user = res.locals.user
     console.log(res.locals)
 
-    res.render('pages/outro.ejs', {
+    res.render('pages/q4.ejs', {
         title: 'Hallo gebruiker',
             user: user
         })

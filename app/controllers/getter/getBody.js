@@ -1,12 +1,12 @@
 const fs = require('fs-extra')
-const jsonFile = './controllers/data/data.json'
+const jsonFile = './app/controllers/data/data.json'
 
 function checkUser(req, res, next){
     console.log(req.body.uuid)
     res.locals = req.body
     let userState
     fs.readFile(jsonFile, (err, content) => {
-        if (err) return console.log(err)
+        if (err) return console.error(err)
         const uuId = req.body.uuid
         const contentJSON = JSON.parse(content)
         for (i = 0; i < contentJSON.data.length; i++) {

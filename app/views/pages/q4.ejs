@@ -10,11 +10,10 @@
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
             
             <label for="Joost">Joost
-                <% if(user.favdoc.includes('JOO5T')){ %> 
-                    <input type="checkbox" name="favdoc" id="Joost" value="JOO5T"checked>
-                <% } else { %>
-                    <input type="checkbox" name="favdoc" id="Joost" value="JOO5T">
-                <% } %>
+                
+                    <input type="checkbox" name="favdoc" id="Joost" value="JOO5T" <% if(user.favdoc.includes('JOO5T')){ %> checked <% } %>>
+              
+
                 
             </label>
             <label for="koop">Koop
