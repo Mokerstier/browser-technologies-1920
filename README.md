@@ -1,114 +1,34 @@
 # Browser Technologies @cmda-minor-web 1920
-//Robuuste, toegankelijke websites ontwerpen en maken …
+- Ik heb deze repo nog niet live
+- Ik werk in een andere [branch](https://github.com/Mokerstier/browser-technologies-1920/tree/enquete/app) (ik weet het vervelend)
 
-In het vak Browser Technologies leer je hoe je goede, robuuste, toegankelijke websites maakt. Je gaat leren over Progressive Enhancement, Feature Detection en Fallback. Het web is er voor iedereen. In dit vak leer je hoe je daarvoor kan zorgen.
+## USECASE #1 
+Ik wil een enquete kunnen invullen over de minor Web Development, met verschillende antwoord mogelijkheden. Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
-Een van de mooiste principes van het web is dat het er echt is voor iedereen. Iedereen met een computer en een browser moet gebruik kunnen maken van het web. Het web is geen gecontroleerde (programmeer) omgeving. Je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij ziet in jouw browser. Er zijn natuurlijk de technische beperkingen. Zoals - Afmetingen van de browser - Grootte van het apparaat - Manier van interactie - Kwaliteit van de hardware - Kwaliteit van het netwerk. En er zijn mensen. Allemaal verschillende mensen ... Hoe zorg je er dan voor dat websites het altijd doen?
+### Concept
+Ik breek het formulier op per vraag zodat ik de hele tijd per vraag de data kan oplsaan, zodat deze op een ander moment weer beschikbaar is.
+ik doe dit onder andere door de state bij te houden (waar is de gebruiker gebeleven, dit moet ik nog verder uitwerken).
 
-## Leerdoelen
-- _Wat is Progressive enhancement en hoe kun je dit toepassen._
-- _Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund._
-- _Leren een Browser Technologies onderzoeken, testen en implementeren als enhancement._
+### Wireframe
+![Wireflow](https://github.com/Mokerstier/browser-technologies-1920/blob/master/img/20200318_134203.jpg?raw=true)
+Bovenkant is pleasureable (Css & JS de hele mikmak)
+Onderkant is functional (rauwe HTML)
 
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/edit?usp=sharing)
-
-## Planning
-
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| <a href=#week-1>Week 1</a>  | Introductie, College over Progressive enhancement + briefing opdracht 1.1 | College Browser detect + presentaties opdracht 1.1 + briefing opdracht 1.2 Fork je OBA  | Feedbackgesprekken + Bowlen! |
-| <a href=#week-2>Week 2</a>  | College Feature detect + Briefing opdracht 2  | College Browsers + werken aan de opdracht | Feedbackgesprekken  |
-| <a href=#week-3>Week 3</a>  | College Notificaties + werken aan de opdracht  |  Werken aan de opdracht | Beoordelingsgesprekken  |
-
+### Code structuur
+Ik gebruik in dit project Controllers/getter om het formulier uit te lezen en in te vullen. De data uit het formulier sla ik op als JSON in controllers/data/data.JSON.
+Ik gebruik views (EJS) om pagina's te templaten.
+Ik gebruik routes om mijn routes te defineren (blijft de app.js lekker clean).
 
 
-## Programma
+ik had nog wat andere ideeën Database etc. maar om het project simpel te houden ben ik daar vanaf gestapt.
+(vond het alweer ingewikkeld genoeg)
 
-### Week 1
-Het web is voor iedereen. Leren over Progressive enhancement en kennismaken met testen en het device lab.
+## Hier Feedback week2 A.U.B!
+Ik zit een beetje klem met mijn laatste pagina [views/pages/outro.ejs](https://github.com/Mokerstier/browser-technologies-1920/blob/enquete/app/views/pages/outro.ejs) hoe krijg ik die checkboxes nu weer aangevinkt? 
 
-#### Woensdag
-- [Les 1 - Progressive enhancement & Briefing Opdracht 1.1](.//slides/BT1920%20College%20Les1%20-%20Progressive%20Enhancement.pdf)
-- [Opdracht 1.1 - Breek het web](Opdracht1.1.md)
-
-#### Weekly Nerd
-Sanne 't Hooft over Interactie. Woensdag 11 Maart, 16:00 in het minorlokaal.
-
-#### Donderdag
-- [Les 2 - Features testen & Briefing opdracht 1.2]()
-- [Opdracht 1.2 - Fork je OBA](Opdracht1.2.md)
-- [Lezen: Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
-- [Lezen: The Web I Want by Chris James](https://dev.to/quii/the-web-i-want-43o)
-
-
-#### Vrijdag
-Feedbackgesprekken opdracht 1.2
-- [Lezen: Understanding Progressive Enhancement by Aaron Gustafson](https://alistapart.com/article/understandingprogressiveenhancement)
-
-
-
-
-
-### Week 2
-Wat laat je zien als een browser of gebruiker een 'enhancement' niet kan tonen of zien? Hoe doe je Feature Detection en wat doe je als een techniek niet werkt of wordt ondersteund?
-
-#### Woensdag
-- [Les 3 - Over Feature detect & Briefing opdracht 2]()
-- [Opdracht 2 - Progressive Enhanced Browser Technologie](Opdracht2.md)
-- [Lezen: The Role of Enhancement in Web Design by Raluca Budiu / Nielsen Norman Group](https://www.nngroup.com/articles/enhancement/)
-- [Lezen: Accessibility Through Semantic HTML by Laura Kalbag](https://24ways.org/2017/accessibility-through-semantic-html/)
-
-
-#### Weekly Nerd
-PE bij de Voorhoede.
-
-
-#### Donderdag
-- [Les 4 - Over Browsers]()
-- [Lezen: The accessibility mindset by Eric Eggert](https://24ways.org/2015/the-accessibility-mindset/)
-- [Lezen: HTML: The Inaccessible Parts](https://daverupert.com/2020/02/html-the-inaccessible-parts/)
-
-
-#### Vrijdag
-Code review en feedbackgesprekken opdracht 2
-
-
-
-
-### Week 3
-
-#### Woensdag
-- [Les 5 - Over Notificaties]()
-- [Lezen: Progressive Enhancement and Data Visualizations by Chris Coyier](https://css-tricks.com/progressive-enhancement-data-visualizations/)
-- [Lezen: Make the Web Work For Everyone by Justin Crawford, Chris Mills, Ali Spivak](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
-
-
-#### Weekly Nerd
-Op bezoek bij Bol.com
-
-
-#### Donderdag
-Verder werken aan opdracht 2
-
-
-
-#### Vrijdag
-Code review en beoordelingsgesprekken opdracht 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Trots!
+Ik geef mijn user object door met res.locals Express dingetje `res.locals.user = req.body` dan is hij in de volgende functie weer beschikbaar als `const user = res.locals.user` HANDIG!
+waardoor je dus weer door het object heen kan springen met dotnotation `console.log(user.fname) // Wouter (in mijn geval)`
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
