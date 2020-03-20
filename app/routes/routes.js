@@ -1,7 +1,6 @@
 function routes(){
 
     const render = require('../controllers/render/render')
-    const setter = require('../controllers/setter/setbody')
     const getter = require('../controllers/getter/getbody')
 
     const express = require('express')

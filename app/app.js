@@ -12,7 +12,7 @@ const PORT = process.env.PORT
 
 app
     .set('view engine', 'ejs')
-    .set('views', 'views')
+    .set('views', 'app/views')
 
     .use(urlencodedParser)
     .use(express.static(__dirname + '/static'))
