@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "start": "node app/app.js",
-    "dev": "nodemon app/app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
