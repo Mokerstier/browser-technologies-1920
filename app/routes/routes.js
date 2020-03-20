@@ -1,7 +1,7 @@
 function routes(){
 
     const render = require('.././controllers/render/render')
-    const getter = require('../controllers/getter/getbody')
+    const getter = require('.././controllers/getter/getbody')
 
     const express = require('express')
     const router = express.Router()
