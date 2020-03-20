@@ -19,6 +19,7 @@ function routes(){
         .post('/q2', urlencodedParser, getter.getBody, render.renderFormMid)
         .post('/q3', urlencodedParser, getter.getBody, render.renderFormEnd)
         .post('/q4', urlencodedParser, getter.getBody, render.renderFormCheck)
+        .post('/einde', urlencodedParser, getter.getBody, render.renderEinde)
         return router
 }
 

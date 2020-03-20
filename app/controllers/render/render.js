@@ -45,11 +45,21 @@ function renderFormCheck(req, res) {
         })
 }
 
+function renderEinde(req, res) {
+    const user = res.locals.user
+    
+    res.render('pages/einde.ejs', {
+        title: 'Hallo gebruiker',
+            user: user
+        })
+}
+
 module.exports = { 
     renderHome, 
     renderFormOpen, 
     renderFormStart, 
     renderFormMid, 
     renderFormEnd, 
-    renderFormCheck 
+    renderFormCheck,
+    renderEinde
 }

@@ -15,7 +15,7 @@ app
     .set('views', 'app/views')
 
     .use(urlencodedParser)
-    // .use(express.static(__dirname + '/static'))
+    .use(express.static(__dirname + '/static'))
 
     .use('/', routes)
 
