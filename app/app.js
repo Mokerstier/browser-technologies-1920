@@ -25,7 +25,7 @@ app
         })
     })
 
-app.listen(PORT || 3000, function () {
+app.listen(PORT || 8080, function () {
     console.log(`Application started on port: ${PORT}`)
     console.log(`open the page -> http://localhost:${PORT}`)
 });
