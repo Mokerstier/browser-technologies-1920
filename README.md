@@ -24,7 +24,7 @@ ik had nog wat andere ideeën Database etc. maar om het project simpel te houden
 (vond het alweer ingewikkeld genoeg)
 
 ## Hier Feedback week2 A.U.B!
-Ik zit een beetje klem met mijn laatste pagina [views/pages/outro.ejs](https://github.com/Mokerstier/browser-technologies-1920/blob/enquete/app/views/pages/outro.ejs) hoe krijg ik die checkboxes nu weer aangevinkt? 
+~~Ik zit een beetje klem met mijn laatste pagina [views/pages/outro.ejs](https://github.com/Mokerstier/browser-technologies-1920/blob/enquete/app/views/pages/outro.ejs) hoe krijg ik die checkboxes nu weer aangevinkt?~~ 
 
 ### Trots!
 Ik geef mijn user object door met res.locals Express dingetje `res.locals.user = req.body` dan is hij in de volgende functie weer beschikbaar als `const user = res.locals.user` HANDIG!
