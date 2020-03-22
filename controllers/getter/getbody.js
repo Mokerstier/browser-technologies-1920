@@ -1,5 +1,5 @@
 const fs = require('fs-extra')
-const jsonFile = './app/controllers/data/data.json'
+const jsonFile = 'controllers/data/data.json'
 
 function checkUser(req, res, next){
     console.log(req.body.uuid)
@@ -14,7 +14,7 @@ function checkUser(req, res, next){
                 console.log('found match '+contentJSON.data[i])
                 userState = contentJSON.data[i].state
                 const user = contentJSON.data[i]
-                res.render(`pages/q${userState}`, {
+                res.render(`pages/q${userState}.ejs`, {
                     title: `Welkom terug${userState}`,
                     user: user
                 })

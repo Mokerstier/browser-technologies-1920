@@ -1,0 +1,33 @@
+<%- include('../partials/head.ejs') %>
+<main>
+    <form action="/q4" method="POST">
+        <progress value="6" max="9"></progress>
+
+        <input type="hidden" name="state" value="4">
+        <input type="hidden" name="fname" value="<%= user.fname %>">
+        <input type="hidden" name="lname" value="<%= user.lname %>">
+        <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
+
+        <fieldset>
+            <legend>Vraag 3</legend>
+            <p>Wat had in deze minor had je liever anders gezien?</p>
+
+            <% user.favdoc.map(doc =>{ %>
+            <input type="hidden" name="favdoc" value="<%= doc %>">
+            <% }) %>
+            <% user.favcourse.map(course =>{ %>
+            <input type="hidden" name="favcourse" value="<%= course %>">
+            <% }) %>
+            
+            <label for="feedback">Antwoord:
+                <small>Als je het niet weet plaats dan: Geen verbetering</small>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" value="">Verder</button>
+    </form>
+
+</main>
+
+
+<%- include('../partials/footer.ejs') %>
