@@ -1,17 +1,19 @@
 <%- include('../partials/head.ejs') %>
 <main>
     <form action="/q1" method="POST">
+        <input type="hidden" name="state" value="q1">
+        <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
         <fieldset>
-
+            <p><%= user.uuid %></p>
             <legend>Persoonlijke gegevens</legend>
-            <input type="hidden" name="state" value="1">
+            
+            
             <label for="fname">Voornaam:
             <input type="text" name="fname" id="fname" value="">
             </label>
             <label for="lname">Achternaam:
             <input type="text" name="lname" id="lname">
             
-            <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
 
             <label for="anon">Ik blijf liever anoniem
             <input type="checkbox" name="anon" id="anon">

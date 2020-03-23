@@ -7,6 +7,7 @@
             <legend>Vraag 1</legend>
             <p>Wie was je favoriete docent voor de minor?</p>
             <small>Meerdere antwoorden mogelijk</small>
+            <input type="hidden" name="state" value="einde">
             <input type="hidden" name="fname" value="<%= user.fname %>">
             <input type="hidden" name="lname" value="<%= user.lname %>">
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
@@ -50,7 +51,7 @@
             <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback %></textarea>
         </fieldset>
 
-        <button type="submit" value="">Stuur enquete</button>
+        <a href="/q3/<%= user.uuid %>">Terug</a><button type="submit" value="">Stuur enquete</button>
     </form>
 </main>
 

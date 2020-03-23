@@ -9,19 +9,18 @@
             <input type="hidden" name="fname" value="<%= user.fname %>">
             <input type="hidden" name="lname" value="<%= user.lname %>">
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
-            <input type="hidden" name="state" value="2">
+            <input type="hidden" name="state" value="q2">
             <label for="Joost">Joost
-                <input type="checkbox" name="favdoc" id="Joost" value="JOO5T">
+                <input type="checkbox" name="favdoc" id="Joost" value="JOO5T" <% if(Array.isArray(user.favdoc)){ if(user.favdoc.includes('JOO5T')){ %>
+                    checked <% }} %>>
             </label>
             <label for="koop">Koop
-                <input type="checkbox" name="favdoc" id="koop" value="BUY">
+                <input type="checkbox" name="favdoc" id="koop" value="BUY" <%  if(Array.isArray(user.favdoc)){ if(user.favdoc.includes('BUY')){ %>
+                    checked <% }} %>
             </label>
             <label for="Vasilis">Vasilis
-                <input type="checkbox" name="favdoc" id="Vasilis" value="VaCss">
-            </label>
-            <input type="checkbox" name="favdoc" id="anders" value="anders">
-            <label for="anders">Anders namelijk
-                <input type="text" name="favdoc" id="anders">
+                <input type="checkbox" name="favdoc" id="Vasilis" value="VaCss" <%  if(Array.isArray(user.favdoc)){ if(user.favdoc.includes('VaCss')){ %>
+                    checked <% }} %>>
             </label>
         </fieldset>
         <button type="submit" value="">Verder</button>

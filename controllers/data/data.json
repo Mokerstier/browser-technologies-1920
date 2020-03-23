@@ -2,19 +2,15 @@
   "data": [
     {
       "fname": "Wouter",
-      "lname": "Heijde",
+      "lname": "van der Heijde",
       "uuid": "12",
-      "state": "4",
-      "favdoc": [
-        "JOO5T",
-        "BUY",
-        "VaCss"
-      ],
+      "favdoc": "JOO5T",
+      "state": "q4",
       "favcourse": [
         "CSS",
         "WAFS"
       ],
-      "feedback": "hallo"
+      "feedback": ""
     }
   ]
 }

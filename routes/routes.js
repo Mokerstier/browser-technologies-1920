@@ -12,9 +12,12 @@ function routes(){
     router
         .get('/', render.renderHome)
         .get('/enquete', render.renderFormOpen)
-        .get('/q1', render.renderFormStart)
-    
-        .post('/vraag', urlencodedParser, getter.checkUser)
+        .get('/q1', getter.checkUser, render.renderHome)
+        .get('/q1/:id', getter.checkUser, render.renderFormStart)
+        .get('/q2/:id', getter.checkUser, render.renderFormMid)
+        .get('/q3/:id', getter.checkUser, render.renderFormEnd)
+
+        .post('/vraag', urlencodedParser, getter.whoIsUser, getter.getBody, render.renderHome)
         .post('/q1', urlencodedParser, getter.getBody, render.renderFormStart)
         .post('/q2', urlencodedParser, getter.getBody, render.renderFormMid)
         .post('/q3', urlencodedParser, getter.getBody, render.renderFormEnd)
