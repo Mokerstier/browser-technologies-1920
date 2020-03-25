@@ -12,36 +12,37 @@
             <input type="hidden" name="lname" value="<%= user.lname %>">
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
             <label for="Joost">Joost
-
-                <input type="checkbox" name="favdoc" id="Joost" value="JOO5T" <% if(user.favdoc.includes('JOO5T')){ %>
+                <input type="checkbox" name="favdoc1" id="Joost" value="JOO5T" <%  if(user.favdoc1 === 'JOO5T'){ %>
                     checked <% } %>>
             </label>
             <label for="koop">Koop
-                <input type="checkbox" name="favdoc" id="koop" value="BUY" <% if(user.favdoc.includes('BUY')){ %>
-                    checked <% } %>>
+                <input type="checkbox" name="favdoc2" id="koop" value="BUY" <%   if(user.favdoc2 ==='BUY'){ %>
+                    checked <% } %>
             </label>
             <label for="Vasilis">Vasilis
-                <input type="checkbox" name="favdoc" id="Vasilis" value="VaCss" <% if(user.favdoc.includes('VaCss')){ %>
+                <input type="checkbox" name="favdoc3" id="Vasilis" value="VaCss" <%   if(user.favdoc3 === 'VaCss'){ %>
                     checked <% } %>>
             </label>
         </fieldset>
 
         <fieldset>
+
             <legend>Vraag 2</legend>
             <p>Wat was je favoriete vak?</p>
             <small>Meerdere antwoorden mogelijk</small>
-            <label for="Joost">CSS-to-the-recue
-                <input type="checkbox" name="favcourse" id="CSS" value="CSS" <% if(user.favcourse.includes('CSS')){ %>
+            <label for="CSS">CSS-to-the-recue
+                <input type="checkbox" name="favcourse1" id="CSS" value="CSS" <% if(user.favcourse1 === 'CSS'){ %>
                     checked <% } %>>
             </label>
             <label for="WAFS">WAFS
-                <input type="checkbox" name="favcourse" id="WAFS" value="WAFS" <% if(user.favcourse.includes('WAFS')){ %>
+                <input type="checkbox" name="favcourse2" id="WAFS" value="WAFS" <% if(user.favcourse2 === 'WAFS'){ %>
                     checked <% } %>>
             </label>
             <label for="PWA">PWA
-                <input type="checkbox" name="favcourse" id="PWA" value="PWA" <% if(user.favcourse.includes('PWA')){ %>
+                <input type="checkbox" name="favcourse3" id="PWA" value="PWA" <% if(user.favcourse3 === 'PWA'){ %>
                     checked <% } %>>
             </label>
+
         </fieldset>
 
         <fieldset>

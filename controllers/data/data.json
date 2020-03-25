@@ -1,32 +1,40 @@
 {
   "data": [
     {
-      "fname": "Wouter",
-      "lname": "van der Heijde",
+      "state": "intro",
       "uuid": "12",
-      "favdoc": "JOO5T",
-      "state": "q4",
-      "favcourse": [
-        "CSS",
-        "WAFS"
-      ],
-      "feedback": "hier staat dan feedback"
+      "fname": "",
+      "lname": "",
+      "favdoc1": "JOO5T",
+      "favdoc2": "BUY",
+      "favdoc": "",
+      "favcourse1": "CSS",
+      "favcourse2": "WAFS",
+      "favcourse": "",
+      "feedback": "blabla"
     },
     {
       "state": "intro",
-      "uuid": "16"
+      "uuid": "10",
+      "fname": "pietje",
+      "lname": "snot",
+      "anon": "on",
+      "favdoc1": "JOO5T",
+      "favdoc": "",
+      "favcourse2": "WAFS",
+      "favcourse": "",
+      "feedback": "ok"
     },
     {
       "state": "q4",
-      "fname": "pietje",
-      "lname": "snot",
-      "uuid": "10",
-      "favdoc": [
-        "JOO5T",
-        "BUY"
-      ],
-      "favcourse": "CSS",
-      "feedback": "blabla"
+      "uuid": "16",
+      "fname": "randy",
+      "lname": "dd",
+      "favdoc1": "JOO5T",
+      "favdoc": "",
+      "favcourse3": "PWA",
+      "favcourse": "",
+      "feedback": "fruitje"
     }
   ]
 }
