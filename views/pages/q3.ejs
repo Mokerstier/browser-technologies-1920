@@ -28,10 +28,10 @@
 
             <label for="feedback">Antwoord:
                 <small>Als je het niet weet plaats dan: Geen verbetering</small>
-                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback%></textarea>
             </label>
         </fieldset>
-        <a href="/q2/<%= user.uuid %>">Terug</a><button type="submit" value="">Verder</button>
+        <a href="/q2/<%= user.uuid %>">Terug</a><button type="submit" >Verder</button>
     </form>
 
 </main>

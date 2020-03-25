@@ -22,22 +22,22 @@
 
 
             <label for="CSS">CSS-to-the-recue
-                <input type="checkbox" name="favcourse" id="CSS" value="CSS" <% if(Array.isArray(user.favcourse)){ if(user.favcourse.includes('CSS')){ %>
-                    checked <% }} %>>
+                <input type="checkbox" name="favcourse" id="CSS" value="CSS" <% if(user.favcourse.includes('CSS')){ %>
+                    checked <% } %>>
             </label>
             <label for="WAFS">WAFS
-                <input type="checkbox" name="favcourse" id="WAFS" value="WAFS" <% if(Array.isArray(user.favcourse)){ if(user.favcourse.includes('WAFS')){ %>
-                    checked <% }} %>>
+                <input type="checkbox" name="favcourse" id="WAFS" value="WAFS" <% if(user.favcourse.includes('WAFS')){ %>
+                    checked <% } %>>
             </label>
             <label for="PWA">PWA
-                <input type="checkbox" name="favcourse" id="PWA" value="PWA" <% if(Array.isArray(user.favcourse)){ if(user.favcourse.includes('PWA')){ %>
-                    checked <% }} %>>
+                <input type="checkbox" name="favcourse" id="PWA" value="PWA" <% if(user.favcourse.includes('PWA')){ %>
+                    checked <% } %>>
             </label>
 
             
 
         </fieldset>
-        <a href="/q1/:<%= user.uuid %>">Terug</a><button type="submit" value="">Verder</button>
+        <a href="/q1/<%= user.uuid %>">Terug</a><button type="submit" value="">Verder</button>
     </form>
 
 </main>

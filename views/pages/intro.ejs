@@ -4,19 +4,19 @@
         <input type="hidden" name="state" value="q1">
         <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
         <fieldset>
-            <p><%= user.uuid %></p>
             <legend>Persoonlijke gegevens</legend>
             
             
             <label for="fname">Voornaam:
-            <input type="text" name="fname" id="fname" value="">
+            <input type="text" name="fname" id="fname" value="<%= user.fname %>">
             </label>
             <label for="lname">Achternaam:
-            <input type="text" name="lname" id="lname">
+            <input type="text" name="lname" id="lname" value="<%= user.lname %>">
             
 
             <label for="anon">Ik blijf liever anoniem
-            <input type="checkbox" name="anon" id="anon">
+            <input type="checkbox" name="anon" id="anon" <% if(user.anon){ %>
+                checked <% } %>>
             </label>
 
         </fieldset>

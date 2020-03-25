@@ -12,17 +12,16 @@ function routes(){
     router
         .get('/', render.renderHome)
         .get('/enquete', render.renderFormOpen)
-        .get('/q1', getter.checkUser, render.renderHome)
-        .get('/q1/:id', getter.checkUser, render.renderFormStart)
-        .get('/q2/:id', getter.checkUser, render.renderFormMid)
-        .get('/q3/:id', getter.checkUser, render.renderFormEnd)
+        .get('/q1/:id', getter.whoIsUser, render.renderFormStart)
+        .get('/q2/:id', getter.whoIsUser, render.renderFormMid)
+        .get('/q3/:id', getter.whoIsUser, render.renderFormEnd)
 
-        .post('/vraag', urlencodedParser, getter.whoIsUser, getter.getBody, render.renderHome)
-        .post('/q1', urlencodedParser, getter.getBody, render.renderFormStart)
-        .post('/q2', urlencodedParser, getter.getBody, render.renderFormMid)
-        .post('/q3', urlencodedParser, getter.getBody, render.renderFormEnd)
-        .post('/q4', urlencodedParser, getter.getBody, render.renderFormCheck)
-        .post('/einde', urlencodedParser, getter.getBody, render.renderEinde)
+        .post('/vraag', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderHome)
+        .post('/q1', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormStart)
+        .post('/q2', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormMid)
+        .post('/q3', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormEnd)
+        .post('/q4', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormCheck)
+        .post('/einde', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderEinde)
         return router
 }
 

@@ -1,20 +1,24 @@
 function renderHome(req, res) {
-    const user = req.body
-    console.log('this is '+req.body.uuid)
-    if (!user){
-        res.render('pages/home.ejs', {
+    const uuid = req.body.uuid
+    const user = res.locals.user
+    
+    if (!uuid){
+        return res.render('pages/home.ejs', {
             title: 'Home'
         })
+        
     }
-    if(user.state){
-        res.render(`pages/${user.state}.ejs`, {
+    
+    if(user){
+        return res.render(`pages/${user.state}.ejs`, {
             title: 'Home',
             user: user
         })
+
     }else {
-        res.render('pages/intro.ejs', {
+        return res.render('pages/intro.ejs', {
             title: `Hallo gebruiker`,
-            user: user
+
         })
     }
     
@@ -30,8 +34,8 @@ function renderFormOpen(req, res) {
 }
 
 function renderFormStart(req, res) {
-    const user = req.body
-    console.log(`yoyoyo ${user.uuid}`)
+    const user = res.locals.user
+
     res.render('pages/q1.ejs', {
         title: 'Hallo gebruiker',
         user: user
@@ -39,9 +43,8 @@ function renderFormStart(req, res) {
         })
 }
 function renderFormMid(req, res) {
-    const user = req.body
-    
-    console.log(user)
+    const user = res.locals.user
+
     res.render('pages/q2.ejs', {
         title: 'Hallo gebruiker',
         user: user  ,
@@ -49,7 +52,7 @@ function renderFormMid(req, res) {
         })
 }
 function renderFormEnd(req, res) {
-    const user = req.body
+    const user = res.locals.user
 
     res.render('pages/q3.ejs', {
         title: 'Hallo gebruiker',
