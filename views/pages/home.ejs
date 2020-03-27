@@ -3,17 +3,41 @@
     <h1>Welkom bij de progressive enquete!</h1>
     <p>In deze enquete zullen dingen gevraagd worden die betrekking hebben op:</p>
     <p>de MINOR WEB DEVELOPMENT</p>
+
+    
     <form action="/vraag" method="post">
-        <input type="hidden" name="state" value="intro">
-    <fieldset>
-        <legend>Authenticatie</legend>
+    <input type="hidden" name="state" value="intro">
+
+    <label class="button" for="new">Nieuwe gebruiker</label>
+
+    <input type="checkbox" name="" id="new">
+    <fieldset class="intro-new">    
+        <legend>Nieuwe gebruiker</legend>
         <p>Voer je studentnummer in om door te gaan</p>
         <small>Maak je geen zorgen als je wilt kun je ervoor kiezen om anoniem te blijven in de volgende stap.</small>
         <label for="uuid">Studentnummer
-            <input type="number" name="uuid" id="uuid">
+            <input type="number" name="uuid" id="uuid" required>
+            <small></small>
         </label>
+        <button class="button home" type="submit">Volgende</button>
     </fieldset>
-    <button type="submit">Volgende</button>
+    
+    </form>
+
+    <form action="/enquete" method="post">
+    <label class="button" for="old">enquete hervatten</label>
+    <input type="checkbox" name="" id="old">   
+    <fieldset class="intro-old">
+        <legend>Verder gaan waar ik was</legend>
+        <p>Ik wil mijn enquete afmaken</p>
+        <small></small>
+        <label for="return-uuid">Studentnummer
+            <input  type="number" name="uuid" id="return-uuid" required>
+            <small></small>
+        </label>
+        <button class="button home" type="submit">Volgende</button>
+    </fieldset>
+    
     </form>
 
 </main>

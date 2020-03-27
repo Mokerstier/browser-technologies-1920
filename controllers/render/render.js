@@ -25,7 +25,7 @@ function renderHome(req, res) {
 }
 
 function renderFormOpen(req, res) {
-    const user = res.locals.user
+    let user = res.locals.user
     console.log(user)
     res.render('pages/intro.ejs', {
         title: `Hallo gebruiker`,

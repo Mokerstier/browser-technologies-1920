@@ -7,18 +7,12 @@
         <input type="hidden" name="fname" value="<%= user.fname %>">
         <input type="hidden" name="lname" value="<%= user.lname %>">
         <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
-        <% if(Array.isArray(user.favdoc)) {%>
-        <% user.favdoc.map(doc =>{ %>
-        <input type="hidden" name="favdoc" value="<%= doc %>">
-        <% })} else { %>
-        <input type="hidden" name="favdoc" value="<%= user.favdoc %>">
-        <% } %>
-        <% if(Array.isArray(user.favcourse)) {%>
-        <% user.favcourse.map(doc =>{ %>
-        <input type="hidden" name="favcourse" value="<%= doc %>">
-        <% })} else { %>
-        <input type="hidden" name="favcourse" value="<%= user.favcourse %>">
-        <% } %>
+        <input type="hidden" name="joost" value="<%= user.joost %>">
+        <input type="hidden" name="koop" value="<%= user.koop %>">
+        <input type="hidden" name="vasilis" value="<%= user.vasilis %>">
+        <input type="hidden" name="PWA" value="<%= user.PWA %>">
+        <input type="hidden" name="CSS" value="<%= user.CSS %>">
+        <input type="hidden" name="WAFS" value="<%= user.WAFS %>">
 
 
         <fieldset>
@@ -31,7 +25,9 @@
                 <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback%></textarea>
             </label>
         </fieldset>
-        <a href="/q2/<%= user.uuid %>">Terug</a><button type="submit" >Verder</button>
+        <div class="button-container">
+            <a href="/q2/<%= user.uuid %>" class="button button-back">Terug</a><button class="button" type="submit" value="">Verder</button>
+        </div> 
     </form>
 
 </main>

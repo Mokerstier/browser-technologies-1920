@@ -1,29 +1,34 @@
 <%- include('../partials/head.ejs') %>
 <main>
     <form action="/q2" method="POST">
-        <progress value="1" max="9"></progress>
-        <fieldset>       
-            <legend>Vraag 1</legend>
-            <p>Wie was je favoriete docent voor de minor?</p>
-            <small>Meerdere antwoorden mogelijk</small>
+        <progress value="1" max="9"></progress>    
             <input type="hidden" name="fname" value="<%= user.fname %>">
             <input type="hidden" name="lname" value="<%= user.lname %>">
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
             <input type="hidden" name="state" value="q2">
-            <label for="Joost">Joost
-                <input type="checkbox" name="favdoc1" id="Joost" value="JOO5T" <%  if(user.favdoc1 === 'JOO5T'){ %>
-                    checked <% } %>>
-            </label>
-            <label for="koop">Koop
-                <input type="checkbox" name="favdoc2" id="koop" value="BUY" <%   if(user.favdoc2 ==='BUY'){ %>
-                    checked <% } %>
-            </label>
-            <label for="Vasilis">Vasilis
-                <input type="checkbox" name="favdoc3" id="Vasilis" value="VaCss" <%   if(user.favdoc3 === 'VaCss'){ %>
-                    checked <% } %>>
-            </label>
-        </fieldset>
-        <button type="submit" value="">Verder</button>
+
+            <fieldset class="form-field">
+                <legend>Vraag 1</legend>
+                <p>Wie was je favoriete docent voor de minor?</p>
+                <small>Meerdere antwoorden mogelijk</small>
+                <div class="form-group">
+                    <input type="checkbox" name="joost" id="Joost" <%  if(user.joost === 'on'){ %> checked <% } %>>
+                    <label for="Joost">Joost
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="koop" id="koop" <%   if(user.koop === 'on'){ %> checked <% } %>>
+                    <label for="koop">Koop
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="vasilis" id="Vasilis" value="VaCss" <%   if(user.vasilis === 'on'){ %>
+                        checked <% } %>>
+                    <label for="Vasilis">Vasilis
+                    </label>
+                </div>
+            </fieldset>
+            <button class="button" type="submit" value="">verder</button>
     </form>
     
 </main>

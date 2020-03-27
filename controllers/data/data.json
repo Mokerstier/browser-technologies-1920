@@ -1,40 +1,71 @@
 {
   "data": [
     {
-      "state": "intro",
+      "state": "einde",
       "uuid": "12",
-      "fname": "",
-      "lname": "",
-      "favdoc1": "JOO5T",
-      "favdoc2": "BUY",
-      "favdoc": "",
-      "favcourse1": "CSS",
-      "favcourse2": "WAFS",
-      "favcourse": "",
-      "feedback": "blabla"
+      "fname": "Wouter",
+      "lname": "van der Heijde",
+      "feedback": "blabla",
+      "anon": "on",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "",
+      "CSS": "on",
+      "WAFS": "on",
+      "PWA": "on"
+    },
+    {
+      "fname": "piet",
+      "lname": "snot",
+      "uuid": "14",
+      "state": "q4",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "VaCss",
+      "CSS": "on",
+      "WAFS": "on",
+      "PWA": "on",
+      "feedback": "asd"
     },
     {
       "state": "intro",
-      "uuid": "10",
-      "fname": "pietje",
-      "lname": "snot",
-      "anon": "on",
-      "favdoc1": "JOO5T",
-      "favdoc": "",
-      "favcourse2": "WAFS",
-      "favcourse": "",
-      "feedback": "ok"
+      "uuid": "18",
+      "fname": "randy",
+      "lname": "dd",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "VaCss",
+      "CSS": "on",
+      "WAFS": "on",
+      "PWA": "on",
+      "feedback": "sss"
     },
     {
       "state": "q4",
-      "uuid": "16",
-      "fname": "randy",
-      "lname": "dd",
-      "favdoc1": "JOO5T",
-      "favdoc": "",
-      "favcourse3": "PWA",
-      "favcourse": "",
-      "feedback": "fruitje"
+      "uuid": "17",
+      "fname": "dd",
+      "lname": "aa",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "VaCss",
+      "CSS": "on",
+      "WAFS": "on",
+      "PWA": "",
+      "feedback": ""
+    },
+    {
+      "state": "einde",
+      "uuid": "190",
+      "fname": "pietje",
+      "lname": "Heijde",
+      "anon": "on",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "VaCss",
+      "CSS": "on",
+      "WAFS": "on",
+      "PWA": "",
+      "feedback": "hallo"
     }
   ]
 }

@@ -7,33 +7,33 @@
         <input type="hidden" name="fname" value="<%= user.fname %>">
         <input type="hidden" name="lname" value="<%= user.lname %>">
         <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
-        <% if(Array.isArray(user.favdoc)) {%> 
-            <% user.favdoc.map(doc =>{ %> 
-            <input type="hidden" name="favdoc" value="<%= doc %>">
-        <% })} else { %>
-            <input type="hidden" name="favdoc" value="<%= user.favdoc %>">
-            <% } %>   
+        <input type="hidden" name="joost" value="<%= user.joost %>">
+        <input type="hidden" name="koop" value="<%= user.koop %>">
+        <input type="hidden" name="vasilis" value="<%= user.vasilis %>">
        
-        <fieldset>
-
+        <fieldset class="form-field">
             <legend>Vraag 2</legend>
             <p>Wat was je favoriete vak?</p>
             <small>Meerdere antwoorden mogelijk</small>
-            <label for="CSS">CSS-to-the-recue
-                <input type="checkbox" name="favcourse1" id="CSS" value="CSS" <% if(user.favcourse1 === 'CSS'){ %>
-                    checked <% } %>>
-            </label>
-            <label for="WAFS">WAFS
-                <input type="checkbox" name="favcourse2" id="WAFS" value="WAFS" <% if(user.favcourse2 === 'WAFS'){ %>
-                    checked <% } %>>
-            </label>
-            <label for="PWA">PWA
-                <input type="checkbox" name="favcourse3" id="PWA" value="PWA" <% if(user.favcourse3 === 'PWA'){ %>
-                    checked <% } %>>
-            </label>
-
+            <div class="form-group">
+                <input type="checkbox" name="CSS" id="CSS" <% if(user.CSS === 'on'){ %> checked <% } %>>
+                <label for="CSS">CSS-to-the-recue
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="WAFS" id="WAFS" <% if(user.WAFS === 'on'){ %> checked <% } %>>
+                <label for="WAFS">WAFS
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="PWA" id="PWA" <% if(user.PWA === 'on'){ %> checked <% } %>>
+                <label for="PWA">PWA
+                </label>
+            </div>
         </fieldset>
-        <a href="/q1/<%= user.uuid %>">Terug</a><button type="submit" value="">Verder</button>
+        <div class="button-container">
+            <a href="/q1/<%= user.uuid %>" class="button button-back">Terug</a><button class="button" type="submit" value="">verder</button>
+        </div>
     </form>
 
 </main>

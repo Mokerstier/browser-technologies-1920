@@ -3,7 +3,7 @@
     <form action="/einde" method="POST">
         <progress value="9" max="9"></progress>
         <p>Controleer je antwoorden</p>
-        <fieldset>
+        <fieldset class="form-field">
             <legend>Vraag 1</legend>
             <p>Wie was je favoriete docent voor de minor?</p>
             <small>Meerdere antwoorden mogelijk</small>
@@ -11,48 +11,54 @@
             <input type="hidden" name="fname" value="<%= user.fname %>">
             <input type="hidden" name="lname" value="<%= user.lname %>">
             <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
-            <label for="Joost">Joost
-                <input type="checkbox" name="favdoc1" id="Joost" value="JOO5T" <%  if(user.favdoc1 === 'JOO5T'){ %>
+            <div class="form-group">
+                <input type="checkbox" name="joost" id="Joost" <%  if(user.joost === 'on'){ %> checked <% } %>>
+                <label for="Joost">Joost
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="koop" id="koop" <%   if(user.koop === 'on'){ %> checked <% } %>>
+                <label for="koop">Koop
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="vasilis" id="Vasilis" value="VaCss" <%   if(user.vasilis === 'on'){ %>
                     checked <% } %>>
-            </label>
-            <label for="koop">Koop
-                <input type="checkbox" name="favdoc2" id="koop" value="BUY" <%   if(user.favdoc2 ==='BUY'){ %>
-                    checked <% } %>
-            </label>
-            <label for="Vasilis">Vasilis
-                <input type="checkbox" name="favdoc3" id="Vasilis" value="VaCss" <%   if(user.favdoc3 === 'VaCss'){ %>
-                    checked <% } %>>
-            </label>
+                <label for="Vasilis">Vasilis
+                </label>
+            </div>
         </fieldset>
 
-        <fieldset>
-
+        <fieldset class="form-field">
             <legend>Vraag 2</legend>
             <p>Wat was je favoriete vak?</p>
             <small>Meerdere antwoorden mogelijk</small>
-            <label for="CSS">CSS-to-the-recue
-                <input type="checkbox" name="favcourse1" id="CSS" value="CSS" <% if(user.favcourse1 === 'CSS'){ %>
-                    checked <% } %>>
-            </label>
-            <label for="WAFS">WAFS
-                <input type="checkbox" name="favcourse2" id="WAFS" value="WAFS" <% if(user.favcourse2 === 'WAFS'){ %>
-                    checked <% } %>>
-            </label>
-            <label for="PWA">PWA
-                <input type="checkbox" name="favcourse3" id="PWA" value="PWA" <% if(user.favcourse3 === 'PWA'){ %>
-                    checked <% } %>>
-            </label>
-
+            <div class="form-group">
+                <input type="checkbox" name="CSS" id="CSS" <% if(user.CSS === 'on'){ %> checked <% } %>>
+                <label for="CSS">CSS-to-the-recue
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="WAFS" id="WAFS" <% if(user.WAFS === 'on'){ %> checked <% } %>>
+                <label for="WAFS">WAFS
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="PWA" id="PWA" <% if(user.PWA === 'on'){ %> checked <% } %>>
+                <label for="PWA">PWA
+                </label>
+            </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-field">
             <legend>Vraag 3</legend>
             <p>Wat in deze minor had je liever anders gezien?</p>
             <label for="feedback">Antwoord:</label>
-            <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback %></textarea>
+            <textarea required name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback %></textarea>
         </fieldset>
-
-        <a href="/q3/<%= user.uuid %>">Terug</a><button type="submit" value="">Stuur enquete</button>
+        <div class="button-container">
+            <a href="/q3/<%= user.uuid %>" class="button button-back">Terug</a><button class="button" type="submit" value="">Stuur enquete</button>
+        </div>
     </form>
 </main>
 

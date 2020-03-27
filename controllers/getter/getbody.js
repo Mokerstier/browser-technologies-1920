@@ -3,7 +3,13 @@ const jsonFile = 'controllers/data/data.json'
 
 
 function whoIsUser (req, res, next){
-    const uuId = req.body.uuid || req.params.id
+    let uuId
+    
+    req.params.id ?  uuId = req.params.id : uuId = req.body.uuid
+    console.log(req.params.id);
+    console.log(req.body.uuid);
+    
+    console.log(uuId)
     fs.readFile(jsonFile, (err, content) => {
         if (err) return console.log(err)
         
@@ -15,6 +21,8 @@ function whoIsUser (req, res, next){
                 res.locals.user = contentJSON.data[i]
                
                 console.log("dit is de match uit WhoUser "+ res.locals.user.lname)
+                console.log('nu naar updateUser functie');
+                
                 return next()
             } else {
                 user = null
@@ -26,10 +34,11 @@ function whoIsUser (req, res, next){
     })
     
 }
+
 function updateUser(req, res, next){
 
     const user = res.locals.user
-    
+
     // new user logic
     if (!user){       
         const newUser = req.body
@@ -45,7 +54,11 @@ function updateUser(req, res, next){
             return next()
         })
     // existing user
-    } else {
+    
+    }else {
+        
+        // console.log(user.state !== 'intro')
+        // if(user.state !== 'intro') return next()
         const uuId = req.body.uuid
 
         fs.readFile(jsonFile, (err, content) => {
