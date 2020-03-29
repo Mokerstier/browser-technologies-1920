@@ -5,18 +5,16 @@ const form = document.querySelector('form')
 const fieldset = document.querySelectorAll('fieldset')
 const text = document.querySelector('textarea')
 const progress = document.querySelector('progress')
-const uuid = document.getElementById('uuid')
 const koop = document.getElementById('koop')
-jsWarning.classList.add('d-none')
-const startValue = progress.value
 
-console.log(uuid);
-function checkUuid(){
-    if(uuid.value){
-        return true
-    } else return false
-   
-}
+
+
+jsWarning.classList.add('d-none')
+let startValue
+
+!progress ? console.log(false): startValue = progress.value 
+console.log(startValue);
+
 
 function checkCheckbox(){
     let checked = 0
@@ -27,9 +25,12 @@ function checkCheckbox(){
         }
     }
     if(checked > 0){
-        progress.value = startValue + checked
+        progress.value = startValue + 2
         return true
-    } else return false
+    } else {
+        progress.value = startValue 
+        return false
+    }
 }
 function showKoop(){
     let pos = 0
@@ -37,12 +38,13 @@ function showKoop(){
     pos = Math.floor(Math.random()*5)
     koop.classList.add(`pos-${pos}`) 
 }
-showKoop()
+if(koop){
+    showKoop()
+}
+
 function checkText(){
-    console.log('backspace werkt!' );
-    console.log(text.value.length);
     
-    if(text.value.length < 5) return false
+    if(!text) return false
     if(text.value.length > 5){
         return true
     } else return false
@@ -51,29 +53,46 @@ function checkText(){
 //     event.preventDefault()
 //     console.log(user)
 // })
+function addClass(element, string){
+    element.classList.add(string)
+}
+function deActive(button){
+    button.classList.remove('active')
+}
+function disableButton(button){
+    button.setAttribute('disabled', 'disabled') 
+}
+function enableButton(button){
+    button.removeAttribute('disabled')
+}
 function checkForm(){
+    
     if (checkText() || checkCheckbox()) {
-        submit.classList.add('active')
-        submit.removeAttribute('disabled')
+        addClass(submit, 'active')
+        enableButton(submit)
     }
     else { 
-        submit.classList.remove('active')
-        submit.setAttribute('disabled', 'disabled') 
+        deActive(submit)
+        disableButton(submit)
     }
 }
 
 window.addEventListener('load', function(event){
     checkForm()
-
 })
 
 form.addEventListener('change', function(event){
-
   checkForm()
 })
+
+
 text.addEventListener('keyup', function(event){
+    console.log('keyup');
+    
     checkForm()
 })
+
+
 // form.addEventListener('change', function(event){
 //     console.log('executing checkText')
 //     checkText()

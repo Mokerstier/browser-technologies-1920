@@ -15,11 +15,44 @@ body {
   font-family: Roboto, Helvetica, "sans-serif";
   background-color: lightslategrey;
 }
+:focus{
+  outline-style: double;
+  outline-color: #27b3dd;
+}
+#new:focus + label{
+  background-color: #fff;
+  color: black;
+
+}
+#old:focus + label{
+  background-color: #fff;
+  color: black;
+
+}
 main {
   max-width: 31em;
   display: flex;
   flex-direction: column;
   margin: auto;
+  background-color: rgb(214, 222, 255);
+  background: linear-gradient(270deg, #27b3dd, #49f337, #e6f337);
+  background-size: 600% 600%;
+  padding: 1rem;
+  animation: gradient-focus 15s ease infinite;
+  padding-bottom: 3rem;
+}
+@keyframes gradient-focus {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+input[type=checkbox], input[type=radio]{
+  visibility: hidden;
+}
+.button.home:hover{
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
 }
 progress {
   -webkit-appearance: none;
@@ -97,11 +130,17 @@ fieldset {
     ),
     linear-gradient(217deg, #01cd82, #01cd8200 70.71%),
     linear-gradient(366deg, #00b1f1, #00b1f100 80.71%);
+    box-shadow: 0px 17px 36px -13px rgba(0,0,0,0.75);
+    padding-bottom: 2rem;
 }
 legend {
+  font-weight: bold;
   background-color: #000;
   color: #fff;
   padding: 0.5rem 1rem;
+}
+input{
+  padding-left: 2rem;
 }
 .button-container {
   display: flex;
@@ -113,13 +152,16 @@ legend {
   cursor: pointer;
   outline: none;
   border: 0;
+  color: rgb(46, 46, 46);
   background-color: rgb(180, 180, 180);
   vertical-align: middle;
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 1.25em 2em;
+  border-radius: 0.75em;
   margin: auto;
 }
 
@@ -222,8 +264,21 @@ form a {
 fieldset p {
   margin-bottom: 0.2rem;
 }
+input:invalid ~ .invalid{
+  color: red;
+  max-height: 2rem;
+  opacity: 1;
+}
+.valid{
+  color: greenyellow;
+  max-height:0;
+  opacity: 0;
+}
 small {
+  transition: all ease 1s;
   margin-bottom: 1rem;
+  margin-top: .5rem;
+  display: block;
 }
 .form-group {
   margin-bottom: 0.5rem;
@@ -286,22 +341,26 @@ small {
 .d-none {
   display: none;
 }
-.intro-old,
-.intro-new {
+form.intro-form {
+  z-index: 0;
   opacity: 0;
   max-height: 0;
   transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
-#new,
-#old {
+
+/* form.intro-form{
   opacity: 0;
   position: absolute;
+} */
+#new:checked + label, #old:checked + label{
+  background-color: #fff;
+  color: #000;
 }
-#new:checked ~ fieldset {
+#new:checked ~ form:first-of-type {
   opacity: 1;
   max-height: 20em;
 }
-#old:checked ~ fieldset {
+#old:checked ~ form:last-of-type {
   opacity: 1;
   max-height: 20em;
 }
