@@ -92,7 +92,7 @@ Browsers die dit zonder prefix niet begrijpen krijgen daardoor een minder deligh
 Met `@supports` wordt er gekeken naar `(transform-style: preserve-3d)` als de browser dit ondersteunt dan zullen de buttons gekke styling krijgen die bijdragen aan de user delight.
 
 ### SideNote
-#### progressive 
+#### Progressive deterioration
 Na het invoeren van fetch op de clientside is een bug ontstaan waardoor het formulier na vraag 3 niet wordt gesubmit hierdoor kloppen de antwoorden in de controleer stap niet meer.
 Als ik meer tijd heb ga ik proberen om dit nog te fixen.
 <!-- ☝️ replace this description with a description of your own work -->
