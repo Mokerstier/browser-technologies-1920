@@ -2,115 +2,29 @@
   "data": [
     {
       "state": "einde",
-      "uuid": "12",
       "fname": "Wouter",
-      "lname": "van der Heijde",
-      "feedback": "blabla",
-      "anon": "on",
-      "joost": "on",
-      "koop": "on",
-      "vasilis": "",
-      "CSS": "on",
-      "WAFS": "on",
-      "PWA": "on"
-    },
-    {
-      "fname": "piet",
-      "lname": "snot",
-      "uuid": "14",
-      "state": "q4",
-      "joost": "on",
-      "koop": "on",
-      "vasilis": "VaCss",
-      "CSS": "on",
-      "WAFS": "on",
-      "PWA": "on",
-      "feedback": "asd"
-    },
-    {
-      "state": "intro",
-      "uuid": "18",
-      "fname": "randy",
-      "lname": "dd",
-      "joost": "on",
-      "koop": "on",
-      "vasilis": "VaCss",
-      "CSS": "on",
-      "WAFS": "on",
-      "PWA": "on",
-      "feedback": "sss"
-    },
-    {
-      "state": "einde",
-      "uuid": "1777",
-      "fname": "dd",
-      "lname": "aa",
-      "joost": "on",
-      "koop": "on",
-      "vasilis": "VaCss",
-      "CSS": "on",
-      "WAFS": "on",
-      "PWA": "",
-      "feedback": "ssssss"
-    },
-    {
-      "state": "einde",
-      "uuid": "190",
-      "fname": "pietje",
       "lname": "Heijde",
-      "anon": "on",
+      "uuid": "1236",
       "joost": "on",
-      "koop": "on",
-      "vasilis": "VaCss",
-      "CSS": "on",
       "WAFS": "on",
-      "PWA": "",
-      "feedback": "hallo"
-    },
-    {
-      "state": "einde",
-      "uuid": "1234",
-      "fname": "Ivana",
-      "lname": "Antal",
-      "joost": "on",
-      "koop": "on,on",
-      "vasilis": "VaCss",
-      "CSS": "on",
-      "WAFS": "on,on",
-      "PWA": "on,on",
-      "feedback": "sssssssssss"
-    },
-    {
-      "state": "q1",
-      "uuid": "1111",
-      "fname": "",
-      "lname": ""
+      "feedback": "safasdfassaf"
     },
     {
       "state": "q2",
-      "uuid": "2222",
-      "fname": "ugh",
-      "lname": "uuuugh",
-      "joost": "on",
-      "koop": "on",
-      "vasilis": "",
-      "WAFS": "on",
-      "PWA": "",
-      "CSS": "on",
-      "feedback": "ssssssssssss"
+      "uuid": "3333",
+      "fname": "22",
+      "lname": "22",
+      "anon": "checked",
+      "WAFS": "checked",
+      "joost": "checked",
+      "feedback": "sasdfasfsaf"
     },
     {
-      "state": "einde",
-      "uuid": "6666",
-      "fname": "ddads",
-      "lname": "asdasd",
-      "joost": "on",
-      "koop": "",
-      "vasilis": "",
-      "CSS": "on",
-      "PWA": "",
-      "WAFS": "",
-      "feedback": "ssssss"
+      "state": "q1",
+      "uuid": "1233",
+      "fname": "sadfa",
+      "lname": "asfasf",
+      "anon": "checked"
     }
   ]
 }
