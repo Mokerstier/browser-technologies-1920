@@ -48,14 +48,26 @@ input:invalid ~ .invalid{
   max-height: 2rem;
   opacity: 1;
 }
-````
+```
 ![Voorbeeld Error msg](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_%20(1).png?raw=true)
 
 ### Enhanced by JS
 
-![Disabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1 (1).png)
-![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1.png)
+![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1%20(1).png?raw=true)
+![Disabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1.png)
 Door met JS te kijken naar de input fields in het form wordt een submit button active en enabled.
+
+Ook zal de progress bar meebewegen met een transition naar de volgende state.*
+
+* Deze transitions zijn een vorm van enhancement want oudere browsers zoals ie 6-9 en Opera Mini ondersteunen deze niet bron: [Can i use](https://caniuse.com/#feat=css-transitions)
+
+```
+if (checked > 0) {
+        if(progress){
+            progress.value = progress.value + 2;
+        }
+      return true;
+```
 
 # Feature Detection
 ## JS FETCH
@@ -71,8 +83,15 @@ Waarna de nieuwe pagina laadt met een nieuwe vraag.
 
 # 
 ## CSS @supports
+Ik maak bewust geen gebruik van prefixes:
+Dit doe ik omdat ik de styling die ik toepas met bijv: `aniomation` zie als een enhancement.
+Browsers die dit zonder prefix niet begrijpen krijgen daardoor een minder delightfull experience desalniettemin werkt de applicatie nog wel!
 Met `@supports` wordt er gekeken naar `(transform-style: preserve-3d)` als de browser dit ondersteunt dan zullen de buttons gekke styling krijgen die bijdragen aan de user delight.
 
+### SideNote
+#### progressive 
+Na het invoeren van fetch op de clientside is een bug ontstaan waardoor het formulier na vraag 3 niet wordt gesubmit hierdoor kloppen de antwoorden in de controleer stap niet meer.
+Als ik meer tijd heb ga ik proberen om dit nog te fixen.
 <!-- ☝️ replace this description with a description of your own work -->
 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
