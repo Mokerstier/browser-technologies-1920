@@ -25,7 +25,7 @@ function checkStudentNumberOld(uuid){
         enableButton(oudButton)
         addClass(oudButton, 'active')
         addClass(invalid2, 'valid')
-    } else disableButton(oudButton), deActive(oudButton)
+    } else disableButton(oudButton), removeClass(oudButton, 'active')
 }
 function checkStudentNumberNew(uuid){
     console.log('testing '+uuid)
@@ -33,7 +33,7 @@ function checkStudentNumberNew(uuid){
         enableButton(nieuwButton)
         addClass(nieuwButton, 'active')
         addClass(invalid1, 'valid')
-    } else disableButton(nieuwButton), deActive(nieuwButton)
+    } else disableButton(nieuwButton), removeClass(nieuwButton, 'active')
 }
 
 fieldsetOld.addEventListener('keyup', function(event){

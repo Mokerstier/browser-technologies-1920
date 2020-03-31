@@ -1,15 +1,16 @@
 <%- include('../partials/head.ejs') %>
 <script src="/js/home.js" defer></script>
-<main>
+<main class="home">
     <h1>Welkom bij de progressive enquete!</h1>
     <p>In deze enquete zullen dingen gevraagd worden die betrekking hebben op:</p>
     <p>de MINOR WEB DEVELOPMENT</p>
-
+    <progress></progress>
     <input tabindex="1" type="radio" name="user" id="new">
     <label class="button home" for="new">Nieuwe gebruiker</label>
     <form class="intro-form" action="/vraag" method="post">
-    <input type="hidden" name="state" value="intro">
-
+        
+    <input type="hidden" id="state" name="state" value="intro">
+    <div class="fieldset-container">
     <fieldset class="intro-new">    
         <legend>Nieuwe gebruiker</legend>
         <p>Voer je studentnummer in om door te gaan</p>
@@ -20,7 +21,7 @@
         </label>
         <button class="button" type="submit">Volgende</button>
     </fieldset>
-    
+    </div>
     </form>
 
     <input type="radio" tabindex="2" name="user" id="old">   

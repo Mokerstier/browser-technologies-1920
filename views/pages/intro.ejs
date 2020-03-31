@@ -3,6 +3,7 @@
     <form action="/q1" method="POST">
         <input type="hidden" name="state" value="q1">
         <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
+<div class="fieldset-container">
         <fieldset>
             <legend>Persoonlijke gegevens</legend>
 
@@ -17,6 +18,7 @@
                 checked <% } %>>
             
         </fieldset>
+    </div>
         <button class="button" type="submit" value="">Verder</button>
     </form>
 </main>

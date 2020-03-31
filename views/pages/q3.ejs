@@ -3,7 +3,7 @@
     <form action="/q4" method="POST">
         <progress value="6" max="9"></progress>
 
-        <input type="hidden" name="state" value="q4">
+        <input type="hidden" id="state" name="state" value="q4">
         <input type="hidden" name="fname" value="<%= user.fname %>">
         <input type="hidden" name="lname" value="<%= user.lname %>">
         <input type="hidden" id="uuid" name="uuid" value="<%= user.uuid %>">
@@ -15,16 +15,10 @@
         <input type="hidden" name="WAFS" value="<%= user.WAFS %>">
 
 
-        <fieldset>
-            <legend>Vraag 3</legend>
-            <p>Wat had in deze minor had je liever anders gezien?</p>
-
-
-            <label for="feedback">Antwoord:
-                <small>Als je het niet weet plaats dan: Geen verbetering</small>
-                <textarea name="feedback" id="feedback" cols="30" rows="10"><%= user.feedback%></textarea>
-            </label>
-        </fieldset>
+        <div class="fieldset-container">
+            <%- include('../partials/q3.ejs') %>
+            </div>
+        
         <div class="button-container">
             <a href="/q2/<%= user.uuid %>" class="button button-back">Terug</a><button class="button" type="submit" value="">Verder</button>
         </div> 

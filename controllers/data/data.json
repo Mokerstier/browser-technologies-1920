@@ -73,12 +73,44 @@
       "fname": "Ivana",
       "lname": "Antal",
       "joost": "on",
-      "koop": "on",
+      "koop": "on,on",
       "vasilis": "VaCss",
       "CSS": "on",
-      "WAFS": "on",
-      "PWA": "on",
+      "WAFS": "on,on",
+      "PWA": "on,on",
       "feedback": "sssssssssss"
+    },
+    {
+      "state": "q1",
+      "uuid": "1111",
+      "fname": "",
+      "lname": ""
+    },
+    {
+      "state": "q2",
+      "uuid": "2222",
+      "fname": "ugh",
+      "lname": "uuuugh",
+      "joost": "on",
+      "koop": "on",
+      "vasilis": "",
+      "WAFS": "on",
+      "PWA": "",
+      "CSS": "on",
+      "feedback": "ssssssssssss"
+    },
+    {
+      "state": "einde",
+      "uuid": "6666",
+      "fname": "ddads",
+      "lname": "asdasd",
+      "joost": "on",
+      "koop": "",
+      "vasilis": "",
+      "CSS": "on",
+      "PWA": "",
+      "WAFS": "",
+      "feedback": "ssssss"
     }
   ]
 }

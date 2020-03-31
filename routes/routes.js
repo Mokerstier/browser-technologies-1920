@@ -12,12 +12,16 @@ function routes(){
     router
         .get('/', render.renderHome)
         .get('/enquete', render.renderHome)
+        
+        .get('/intro/:id', getter.whoIsUser, render.renderFormOpen)
         .get('/q1/:id', getter.whoIsUser, render.renderFormStart)
         .get('/q2/:id', getter.whoIsUser, render.renderFormMid)
         .get('/q3/:id', getter.whoIsUser, render.renderFormEnd)
+        .get('/q4/:id', getter.whoIsUser, render.renderEinde)
+        .get('/einde/:id', getter.whoIsUser, render.renderEinde)
 
         .post('/vraag', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderHome)
-        .post('/enquete', getter.whoIsUser, render.renderHome)
+        .post('/enquete',getter.whoIsUser, render.renderHome)
         .post('/q1', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormStart)
         .post('/q2', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormMid)
         .post('/q3', urlencodedParser, getter.whoIsUser, getter.updateUser, render.renderFormEnd)

@@ -23,7 +23,15 @@ function renderHome(req, res) {
     }
     
 }
-
+function renderNext(req, res){
+    let user = res.locals.user
+    console.log('de state: '+ req.locals.user.state)
+    console.log('hallo '+user);
+    res.render('partials/q3.ejs', {
+        user: user
+    })
+    
+}
 function renderFormOpen(req, res) {
     let user = res.locals.user
     console.log(user)
@@ -84,5 +92,6 @@ module.exports = {
     renderFormMid, 
     renderFormEnd, 
     renderFormCheck,
-    renderEinde
+    renderEinde,
+    renderNext
 }
