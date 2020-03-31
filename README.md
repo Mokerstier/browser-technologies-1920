@@ -53,7 +53,7 @@ input:invalid ~ .invalid{
 
 ### Enhanced by JS
 
-![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1%20(1).png?raw=true)
+![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1(1).png?raw=true)
 ![Disabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1.png)
 Door met JS te kijken naar de input fields in het form wordt een submit button active en enabled.
 
