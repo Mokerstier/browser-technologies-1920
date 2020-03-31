@@ -53,8 +53,11 @@ input:invalid ~ .invalid{
 
 ### Enhanced by JS
 
-![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1(1).png?raw=true)
+#### Diabled state
 ![Disabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1.png)
+#### Enabled state
+![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1(1).png?raw=true)
+
 Door met JS te kijken naar de input fields in het form wordt een submit button active en enabled.
 
 Ook zal de progress bar meebewegen met een transition naar de volgende state.*
