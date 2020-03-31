@@ -38,7 +38,7 @@ De functionele laag werkt op alle browsers
 # Usable
 De usable laag enhanced door styling en JS
 
-![Usable laag](https://github.com/Mokerstier/browser-technologies-1920/blob/b585a4d8b4931a51c23adabbb04c280b3c46a1ed/repo-img/localhost_8080_(1).png)
+![Usable laag](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_(1).png?raw=true)
 
 # Pleasurable
 Door Fetch te gebruiken in de client kan de ervaring van het formulier worden enhanced met transitions tussen de "paginas"
@@ -58,7 +58,7 @@ input:invalid ~ .invalid{
   opacity: 1;
 }
 ```
-![Voorbeeld Error msg](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_%20(1).png?raw=true)
+![Voorbeeld Error msg](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_(1).png?raw=true)
 
 ### Enhanced by JS
 
