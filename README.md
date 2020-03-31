@@ -37,6 +37,8 @@ De functionele laag werkt op alle browsers
 
 # Enhancement
 ## Feedback
+
+### HTML + CSS
 De inputs van de gebruiker worden gecontroleerd als de value niet voldoet aan de gevraagde waarde krijgt de user feedback met een error state.
 Door `required` mee te geven aan een input kan de valid state worden afgevangen.
 Vervolgens wordt met css styling toegevoegd op de error message:
@@ -49,12 +51,17 @@ input:invalid ~ .invalid{
 ````
 ![Voorbeeld Error msg](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_%20(1).png?raw=true)
 
+### Enhanced by JS
+
+![Disabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1 (1).png)
+![Enabled](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1.png)
+Door met JS te kijken naar de input fields in het form wordt een submit button active en enabled.
+
 # Feature Detection
 ## JS FETCH
 Ik controleer of de browser beschikt over de fetch functie dit doe ik door `(typeof fetch !== "undefined")` deze returned true als `fetch`beschikbaar is.
-Als fetch beschikbaar is haal ik de volgende (fieldsets) vragen op en zet ze in het form.
+Als fetch beschikbaar is zet ik een `preventDefault()` op de submit button en haal ik de volgende (fieldsets) vragen op en zet ze in het form.
 Hierdoor kan de gebruiker de enquete voortzetten zonder dat hij een nieuwe pagina hoeft te laden.
-Op de submit button zet ik een `preventDefault()` zodat het formulier niet word gesubmit.
 Ook verander ik de classes van de eerder opgehaalde fieldset en hou bij op welke state de gebruiker is met een count.
 
 In een switch kijk ik vervolgens op welke 'state'de gebruiker is en toggle verschillende classes om de fieldsets te laten verschijnen.
