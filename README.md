@@ -30,16 +30,24 @@ ik had nog wat andere ideeën Database etc. maar om het project simpel te houden
 Ik geef mijn user object door met res.locals Express dingetje `res.locals.user = req.body` dan is hij in de volgende functie weer beschikbaar als `const user = res.locals.user` HANDIG!
 waardoor je dus weer door het object heen kan springen met dotnotation `console.log(user.fname) // Wouter (in mijn geval)`
 
+# Functional
+De functionele laag werkt op alle browsers
+
+![Functional laag](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_.png?raw=true)
+
 # Enhancement
 ## Feedback
 De inputs van de gebruiker worden gecontroleerd als de value niet voldoet aan de gevraagde waarde krijgt de user feedback met een error state.
 Door `required` mee te geven aan een input kan de valid state worden afgevangen.
 Vervolgens wordt met css styling toegevoegd op de error message:
-```input:invalid ~ .invalid{
+```
+input:invalid ~ .invalid{
   color: red;
   max-height: 2rem;
   opacity: 1;
-}```
+}
+````
+![Voorbeeld Error msg](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_%20(1).png?raw=true)
 
 # Feature Detection
 ## JS FETCH
