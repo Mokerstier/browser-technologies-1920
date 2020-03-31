@@ -35,6 +35,15 @@ De functionele laag werkt op alle browsers
 
 ![Functional laag](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_.png?raw=true)
 
+# Usable
+De usable laag enhanced door styling en JS
+
+![Usable laag](https://github.com/Mokerstier/browser-technologies-1920/blob/b585a4d8b4931a51c23adabbb04c280b3c46a1ed/repo-img/localhost_8080_(1).png)
+
+# Pleasurable
+Door Fetch te gebruiken in de client kan de ervaring van het formulier worden enhanced met transitions tussen de "paginas"
+
+![Pleasurable laag](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/browsertechno.herokuapp.com_q1(2).png)
 # Enhancement
 ## Feedback
 
