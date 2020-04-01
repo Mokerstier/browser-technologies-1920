@@ -32,6 +32,7 @@ function whoIsUser (req, res, next){
                 console.log('nu naar NEXT');
 
                 res.locals.user = user
+                console.log(user.joost)
                 return next()
             }
         } 
@@ -75,7 +76,9 @@ function updateUser(req, res, next){
             for (i = 0; i < contentJSON.data.length; i++) {
                 if (contentJSON.data[i].uuid === uuId) {
 
-                    let newContentData = Object.assign(contentJSON.data[i], req.body) 
+                    let newContentData = Object.assign(contentJSON.data[i], req.body)
+                    contentJSON.data[i] = newContentData
+                    console.log(JSON.stringify(newContentData))
                     updateData(contentJSON)
                     res.locals.user = newContentData
                     return next()

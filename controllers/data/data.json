@@ -17,7 +17,8 @@
       "anon": "checked",
       "WAFS": "checked",
       "joost": "checked",
-      "feedback": "sasdfasfsaf"
+      "feedback": "sasdfasfsaf",
+      "CSS": "checked"
     },
     {
       "state": "q1",
@@ -25,6 +26,39 @@
       "fname": "sadfa",
       "lname": "asfasf",
       "anon": "checked"
+    },
+    {
+      "state": "q4",
+      "uuid": "1234",
+      "fname": "www",
+      "lname": "wwww",
+      "anon": "checked",
+      "joost": [
+        "checked",
+        "checked"
+      ],
+      "feedback": "okokokokokok",
+      "WAFS": "checked,checked",
+      "koop": ",checked",
+      "vasilis": "",
+      "PWA": [
+        "",
+        "checked"
+      ],
+      "CSS": [
+        "",
+        "checked"
+      ]
+    },
+    {
+      "state": "q2",
+      "uuid": "7777",
+      "fname": "lsknaf",
+      "lname": "asfff",
+      "anon": "checked",
+      "joost": "checked",
+      "WAFS": "checked",
+      "feedback": "000dddfdg"
     }
   ]
 }

@@ -59,13 +59,14 @@ input[type=checkbox], input[type=radio]{
   color: black;
   font-weight: bold;
 }
-.form-field{
+.form-group{
   width: 100%;
 }
 .home progress{
   display: none;
 }
 .fieldset-container{
+
   position: relative;
   min-height: 60vh;
 }
@@ -152,6 +153,7 @@ progress[value]::-webkit-progress-value {
   }
   fieldset {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 form {
@@ -322,9 +324,11 @@ small {
   margin-bottom: 1rem;
   margin-top: .5rem;
   display: block;
+  width: 100%;
 }
 .form-group {
   margin-bottom: 0.5rem;
+  display: block;
 }
 .form-group input:checked ~ label {
   font-weight: bold;

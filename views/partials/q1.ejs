@@ -3,17 +3,17 @@
     <p>Wie was je favoriete docent voor de minor?</p>
     <small>Meerdere antwoorden mogelijk</small>
     <div class="form-group">
-        <input type="checkbox" name="joost" id="Joost" <%  if(user.joost === 'on'){ %> checked <% } %>>
+        <input type="checkbox" name="joost" id="Joost" <%  if(user.joost === 'checked'){ %> checked <% } %>>
         <label for="Joost">Joost
         </label>
     </div>
     <div class="form-group">
-        <input type="checkbox" name="koop" id="koop" <%   if(user.koop === 'on'){ %> checked <% } %>>
+        <input type="checkbox" name="koop" id="koop" <%   if(user.koop === 'checked'){ %> checked <% } %>>
         <label for="koop">Koop
         </label>
     </div>
     <div class="form-group">
-        <input type="checkbox" name="vasilis" id="Vasilis" value="VaCss" <%   if(user.vasilis === 'on'){ %>
+        <input type="checkbox" name="vasilis" id="Vasilis" value="VaCss" <%   if(user.vasilis === 'checked'){ %>
             checked <% } %>>
         <label for="Vasilis">Vasilis
         </label>
