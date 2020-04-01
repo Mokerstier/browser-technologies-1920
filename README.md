@@ -96,14 +96,14 @@ Waarna de nieuwe pagina laadt met een nieuwe vraag.
 # 
 ## CSS @supports
 Ik maak bewust geen gebruik van prefixes:
-Dit doe ik omdat ik de styling die ik toepas met bijv: `aniomation` zie als een enhancement.
+Dit doe ik omdat ik de styling die ik toepas met bijv: `animation` zie als een enhancement.
 Browsers die dit zonder prefix niet begrijpen krijgen daardoor een minder delightfull experience desalniettemin werkt de applicatie nog wel!
 Met `@supports` wordt er gekeken naar `(transform-style: preserve-3d)` als de browser dit ondersteunt dan zullen de buttons gekke styling krijgen die bijdragen aan de user delight.
 
 ### SideNote
 #### Progressive deterioration
-Na het invoeren van fetch op de clientside is een bug ontstaan waardoor het formulier na vraag 3 niet wordt gesubmit hierdoor kloppen de antwoorden in de controleer stap niet meer.
-Als ik meer tijd heb ga ik proberen om dit nog te fixen.
+~~Na het invoeren van fetch op de clientside is een bug ontstaan waardoor het formulier na vraag 3 niet wordt gesubmit hierdoor kloppen de antwoorden in de controleer stap niet meer.
+Als ik meer tijd heb ga ik proberen om dit nog te fixen.~~ (Gefixt!)
 <!-- ☝️ replace this description with a description of your own work -->
 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
