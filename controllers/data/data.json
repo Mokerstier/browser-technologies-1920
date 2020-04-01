@@ -97,14 +97,30 @@
       "feedback": ""
     },
     {
-      "state": "q2",
+      "state": "q4",
       "uuid": "8888",
       "fname": "4567457",
       "lname": "45745754",
       "anon": "checked",
-      "joost": "checked",
-      "CSS": "checked",
-      "feedback": "asdfsdfsdfsdf"
+      "joost": "checked,on",
+      "CSS": [
+        "checked",
+        "on"
+      ],
+      "feedback": "asdfsdfsdfsdf",
+      "koop": [
+        ",on",
+        "on"
+      ],
+      "vasilis": [
+        "",
+        "VaCss"
+      ],
+      "PWA": "",
+      "WAFS": [
+        "",
+        "on"
+      ]
     }
   ]
 }

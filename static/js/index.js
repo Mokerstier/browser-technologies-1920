@@ -150,7 +150,7 @@ function checkCheckbox(fieldset) {
     for (i = 0; i < inputs.length; i++) {
       if (inputs[i].checked) {
         addClass(submit, "active");
-        inputs[i].setAttribute("value", "checked");
+        inputs[i].setAttribute("value", "on");
         enableButton(submit);
         console.log(inputs[i]);
         checked++;
@@ -180,7 +180,7 @@ function checkCheckbox(fieldset) {
 
     for (i = 0; i < inputCheck.length; i++) {
       if (inputCheck[i].checked) {
-        inputCheck[i].setAttribute("value", "checked");
+        inputCheck[i].setAttribute("value", "on");
         checked++;
       }
     }
