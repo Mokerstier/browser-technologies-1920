@@ -198,8 +198,15 @@ textarea{
 }
 
 form:valid .button[type=submit]{
-  background-color: rgb(3, 99, 3);
+  font-weight: 600;
   color: #fff;
+  background: rgb(17, 163, 17);
+  border: 2px solid rgb(2, 59, 2);
+  border-radius: 0.75em;
+  transition: all 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.button:focus{
+  outline: double blue 1px;
 }
 .button {
   position: relative;
