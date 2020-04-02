@@ -9,6 +9,19 @@ const invalid1 = document.querySelector('.intro-new .error-msg')
 const invalid2 = document.querySelector('.intro-old .error-msg')
 const regex = new RegExp('[0-9]{4}')
 
+function addClass(element, string) {
+    element.classList.add(string);
+  }
+  function removeClass(element, string) {
+    element.classList.remove(string);
+  }
+  function disableButton(button) {
+    button.setAttribute("disabled", "disabled");
+  }
+  function enableButton(button) {
+    button.removeAttribute("disabled");
+  }
+
 if(nieuwButton){
     disableButton(nieuwButton)
     disableButton(oudButton)

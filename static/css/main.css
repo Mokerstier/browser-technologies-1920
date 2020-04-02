@@ -196,6 +196,11 @@ textarea{
   display: flex;
   justify-content: space-around;
 }
+
+form:valid .button[type=submit]{
+  background-color: rgb(3, 99, 3);
+  color: #fff;
+}
 .button {
   position: relative;
   display: inline-block;

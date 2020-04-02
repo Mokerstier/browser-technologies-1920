@@ -1,6 +1,6 @@
 <%- include('../partials/head.ejs') %>
 <main>
-    <form action="/q1" method="POST" id="enquete">
+    <form required action="/q1" method="POST" id="enquete">
         <input type="hidden" name="state" value="q1">
         <input type="hidden" name="uuid" id="uuid" value="<%= user.uuid %>">
 <div class="fieldset-container">

@@ -225,13 +225,13 @@ submit.addEventListener("click", function(event) {
     // if(checkText()){
     //     button.classList.add('active')
     // }
-    let formData = Object.values(form).reduce((obj, field) => {
-      obj[field.name] = field.value;
-      return obj;
-    }, {});
+    // let formData = Object.values(form).reduce((obj, field) => {
+    //   obj[field.name] = field.value;
+    //   return obj;
+    // }, {});
 
-    console.log(formData);
-    localStorage.setItem("data", JSON.stringify(formData));
+    // console.log(formData);
+    // localStorage.setItem("data", JSON.stringify(formData));
 
     switch (count) {
       case 0:

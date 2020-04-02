@@ -1,6 +1,6 @@
 <%- include('../partials/head.ejs') %>
 <main>
-    <form action="/einde" method="POST" id="enquete">
+    <form required action="/einde" method="POST" id="enquete">
         <input type="hidden" id="state" name="state" value="einde">
         <input type="hidden" name="fname" value="<%= user.fname %>">
         <input type="hidden" name="lname" value="<%= user.lname %>">
