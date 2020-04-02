@@ -1,8 +1,17 @@
 {
   "data": [
     {
-      "state": "intro",
-      "uuid": "1234"
+      "state": "einde",
+      "uuid": "1234",
+      "fname": "Wouter",
+      "lname": "van der Heijde",
+      "joost": "on",
+      "koop": "",
+      "vasilis": "",
+      "CSS": "on",
+      "PWA": "",
+      "WAFS": "",
+      "feedback": "safasf"
     }
   ]
 }
