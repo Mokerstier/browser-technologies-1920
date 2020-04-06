@@ -31,7 +31,11 @@ Ik geef mijn user object door met res.locals Express dingetje `res.locals.user =
 waardoor je dus weer door het object heen kan springen met dotnotation `console.log(user.fname) // Wouter (in mijn geval)`
 
 # Functional
-De functionele laag werkt op alle browsers
+De functionele laag werkt op alle browsers.
+  - Basic HTML formulier dat op elke browser werkt
+  - Formulieren worden op de server afgehandeld
+  - Na elke vraag wordt een nieuwe pagina geladen met de volgende vraag
+  - progress-bar geeft de gebruiker een indicatie hoever hij in het process is
 
 ![Functional laag](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/localhost_8080_.png?raw=true)
 
@@ -93,7 +97,6 @@ In een switch kijk ik vervolgens op welke 'state'de gebruiker is en toggle versc
 Als de fetch niet beschikbaar is kan de gebruiker iedere keer zijn huidige antwoorden posten en deze worden meteen op de server opgeslagen.
 Waarna de nieuwe pagina laadt met een nieuwe vraag.
 
-# 
 ## CSS @supports
 Ik maak bewust geen gebruik van prefixes:
 Dit doe ik omdat ik de styling die ik toepas met bijv: `animation` zie als een enhancement.
@@ -104,18 +107,6 @@ Met `@supports` wordt er gekeken naar `(transform-style: preserve-3d)` als de br
 #### Progressive deterioration
 ~~Na het invoeren van fetch op de clientside is een bug ontstaan waardoor het formulier na vraag 3 niet wordt gesubmit hierdoor kloppen de antwoorden in de controleer stap niet meer.
 Als ik meer tijd heb ga ik proberen om dit nog te fixen.~~ (Gefixt!)
-<!-- ☝️ replace this description with a description of your own work -->
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+## Conclusie Browser-Technologies
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
