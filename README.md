@@ -84,6 +84,15 @@ if (checked > 0) {
         }
       return true;
 ```
+# Browser tests
+## IE
+In internet explorer kwam ik erachter dat bepaalde styling regels niet werkte waardoor de buttons er heel raar uit kwamen te zien.
+En ook wordt fetch() niet ondersteund, echter is de gehele enquete goed te maken!
+![IE-test](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/IE-screenshot.png)
+
+## Firefox
+De gehele website functioneert zoals ontworpen echter is de custom styling van de progress-bar verdwenen, desalniettemin geeft hij nog wel de juiste feedback en werkt dus nog steeds!
+![Firefox-test](https://github.com/Mokerstier/browser-technologies-1920/blob/master/repo-img/firefox-screenshot.png)
 
 # Feature Detection
 ## JS FETCH
