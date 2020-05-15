@@ -110,4 +110,4 @@ Als ik meer tijd heb ga ik proberen om dit nog te fixen.~~ (Gefixt!)
 
 ## Conclusie Browser-Technologies
 Aan de hand van deze opdracht is het voor mij duidelijk dat de beste ervaring op het web samen gaat met onderzoek naar feutures.
-Want als dit onderzoek niet wordt gedaan verandert de beste ervaring voor sommige mensen in helemaal geen ervaring. Dit komt doordat oudere browsers sommige technologieën niet ondersteuenen waardoor de website voor een X aantal gebruikers compleet in het water valt. Denk aan js FETCH bijv. niet alle browser ondersteuenen deze feature dus wanneer er geen fallback voor ontworpen is is er voor sommige mesnen geen mogelijkheid om de website te gebruiken.
+Want als dit onderzoek niet wordt gedaan verandert de beste ervaring voor sommige mensen in helemaal geen ervaring. Dit komt doordat oudere browsers sommige technologieën niet ondersteuenen waardoor de website voor een X aantal gebruikers compleet in het water valt. Denk aan js FETCH bijv. niet alle browser ondersteuenen deze feature dus wanneer er geen fallback voor ontworpen is is er voor sommige mensen geen mogelijkheid om de website te gebruiken.
