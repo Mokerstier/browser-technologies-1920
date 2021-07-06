@@ -1,5 +1,5 @@
 # Browser Technologies @cmda-minor-web 1920
-- Ik werk in een andere [branch](https://github.com/Mokerstier/browser-technologies-1920/tree/enquete/app) (ik weet het vervelend)
+https://github.com/Mokerstier/browser-technologies-1920/blob/master/img/DemoEnquete.gif
 
 ## USECASE #1 
 Ik wil een enquete kunnen invullen over de minor Web Development, met verschillende antwoord mogelijkheden. Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
