@@ -1,5 +1,4 @@
 # Browser Technologies @cmda-minor-web 1920
-- Ik heb deze repo nog niet live
 - Ik werk in een andere [branch](https://github.com/Mokerstier/browser-technologies-1920/tree/enquete/app) (ik weet het vervelend)
 
 ## USECASE #1 
